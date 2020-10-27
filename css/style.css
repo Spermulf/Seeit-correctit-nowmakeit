@@ -47,21 +47,12 @@ main {
 
 }
 
-/* main a{
-
-  color: yellow ;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2vw;
-
-} */
-
 h1 {
 
     color: yellow ;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2vw;
     margin-top: -3px;
-    /* float: left; */
 
 }
 
@@ -72,8 +63,6 @@ p {
     font-size: 1.8vw;
     margin-top: -5px;
     line-height: 1.9;
-    /* float: left; */
-
 
 }
 
@@ -108,5 +97,65 @@ footer img {
     color: yellow ;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2vw;
+
+}
+
+.list {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas:
+    " list1 list2 list3 list4 "
+    ;
+    grid-gap: 3em;
+
+}
+
+.mindrelist {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas:
+    " list1 list2 list3 "
+    ;
+    grid-gap: 3em;
+
+}
+
+.liste {
+
+    color: yellow ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vw;
+    line-height: 1.5;
+    display: list-item;
+    list-style-type: square;
+    list-style-position: outside;
+
+}
+
+#list1 {
+
+    grid-area: list1;
+
+}
+
+#list2 {
+
+    grid-area: list2;
+
+}
+
+#list3 {
+
+    grid-area: list3;
+
+}
+
+#list4 {
+
+    grid-area: list4;
 
 }
