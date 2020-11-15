@@ -169,11 +169,25 @@ footer img {
 
 }
 
-a:hover {
+
+a:link {
 
     color: #1423F5;
 
 }
+
+a:active {
+
+    color: #1423F5;
+
+}
+
+a:visited {
+
+    color: #1423F5;
+
+}
+
 
 #list1 {
 
